@@ -2,7 +2,7 @@ package sequences
 
 import kotlinx.coroutines.runBlocking
 
-class FaktorialExamples {
+class FactorialExamples {
     companion object{
         fun work() = runBlocking{
 

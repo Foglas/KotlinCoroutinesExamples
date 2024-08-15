@@ -1,3 +1,5 @@
+package testImplementationsCoroutines.suspendCoroutines
+
 class Person(val name : String,
              val secondName: String,
              var age: Int) : PersonInf {

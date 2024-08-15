@@ -1,4 +1,4 @@
-package testImplementationsCoroutines
+package testImplementationsCoroutines.suspendCoroutines
 
 import kotlinx.coroutines.*
 import java.util.concurrent.Executors

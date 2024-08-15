@@ -1,7 +1,6 @@
 import kotlinx.coroutines.*
-import sequences.FaktorialExamples
-import testImplementationsCoroutines.MultipleThreadsCoroutines
-import testImplementationsCoroutines.SuspendCoroutines
+import testImplementationsCoroutines.suspendCoroutines.PersonSuspendCoroutineWithCancableTest
+import testImplementationsCoroutines.suspendCoroutines.SuspendCoroutines
 
 fun main(args: Array<String>) = runBlocking {
 
@@ -12,7 +11,11 @@ fun main(args: Array<String>) = runBlocking {
 
     //FaktorialExamples.work();
 
-    SuspendCoroutines().start();
+    val personCancelableCoroutine = PersonSuspendCoroutineWithCancableTest();
+    personCancelableCoroutine.test()
+
+
+    // SuspendCoroutines().start();
     delay(2000L)
     // Try adding program arguments via Run/Debug configuration.
     // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
