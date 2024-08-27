@@ -23,7 +23,7 @@ val name = CoroutineName("Father")
    // coroutineContextTest.createCoroutine()
 
        val coroutineJobTests = CoroutineJobsTests()
-        coroutineJobTests.testCancellation()
+        coroutineJobTests.cancelWithSuspensionInFinallyBlock()
     delay(2000L)
 
     // Try adding program arguments via Run/Debug configuration.
