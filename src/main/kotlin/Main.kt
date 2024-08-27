@@ -1,8 +1,8 @@
-import coroutineContext.CoroutineContextTest
+import coroutineJob.CoroutineJobsTests
 import kotlinx.coroutines.*
 
 
-    val name = CoroutineName("Father")
+val name = CoroutineName("Father")
     val dispatcher = Dispatchers.Default;
     val defaultContext = dispatcher + name;
 
@@ -19,9 +19,11 @@ import kotlinx.coroutines.*
     // var coroutinesRelationTest = CoroutinesRelationTest();
     //coroutinesRelationTest.test()
 
-    val coroutineContextTest = CoroutineContextTest()
-    coroutineContextTest.createCoroutine()
+   // val coroutineContextTest = CoroutineContextTest()
+   // coroutineContextTest.createCoroutine()
 
+       val coroutineJobTests = CoroutineJobsTests()
+        coroutineJobTests.testCancellation()
     delay(2000L)
 
     // Try adding program arguments via Run/Debug configuration.
