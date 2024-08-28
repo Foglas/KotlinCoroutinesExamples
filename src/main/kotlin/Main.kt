@@ -27,7 +27,7 @@ val name = CoroutineName("Father")
     //    coroutineJobTests.cancelWithSuspensionInFinallyBlock()
 
         var exceptionTest = ExceptionTest()
-        exceptionTest.testExceptionHandling()
+        exceptionTest.testStopExceptionPropagation()
 
         delay(2000L)
 

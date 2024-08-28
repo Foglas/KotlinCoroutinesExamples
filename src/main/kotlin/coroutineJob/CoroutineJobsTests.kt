@@ -136,7 +136,7 @@ class CoroutineJobsTests {
     }
 
     /**
-     * withContext(NonCancellable) support the suspending function. So by default in the finally
+     * withContext(NonCancellable) support the suspending function. So by default in the final
      * block is not supported to run suspending function, however with using of withContext the
      * suspending function like delay can be used
      */
