@@ -1,4 +1,5 @@
 import coroutineJob.CoroutineJobsTests
+import exceptionHandling.ExceptionTest
 import kotlinx.coroutines.*
 
 
@@ -22,9 +23,13 @@ val name = CoroutineName("Father")
    // val coroutineContextTest = CoroutineContextTest()
    // coroutineContextTest.createCoroutine()
 
-       val coroutineJobTests = CoroutineJobsTests()
-        coroutineJobTests.cancelWithSuspensionInFinallyBlock()
-    delay(2000L)
+    // val coroutineJobTests = CoroutineJobsTests()
+    //    coroutineJobTests.cancelWithSuspensionInFinallyBlock()
+
+        var exceptionTest = ExceptionTest()
+        exceptionTest.testExceptionHandling()
+
+        delay(2000L)
 
     // Try adding program arguments via Run/Debug configuration.
     // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
